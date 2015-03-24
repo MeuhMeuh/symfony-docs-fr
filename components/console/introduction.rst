@@ -54,13 +54,13 @@ un fichier ``GreetCommand.php`` et ajoutez-lui ce qui suit::
                 ->addArgument(
                     'name',
                     InputArgument::OPTIONAL,
-                    'Qui voulez-vous saluez?'
+                    'Qui voulez-vous saluer?'
                 )
                 ->addOption(
                    'yell',
                    null,
                    InputOption::VALUE_NONE,
-                   'Si défini, la réponse est affichée en majuscules'
+                   'Si définie, la réponse est affichée en majuscules'
                 )
             ;
         }
@@ -209,9 +209,9 @@ retourne sans aucun affichage.
 Utiliser des arguments de commande
 ----------------------------------
 
-La partie la plus intéressante des commandes sont les arguments et options que
+La partie la plus intéressante des commandes concerne les arguments et options que
 vous pouvez rendre disponibles. Les arguments sont les chaînes de caractères -
-séparées par des espaces - qui viennent après le nom de la commande lui-même.
+séparées par des espaces - qui viennent après le nom de la commande elle-même.
 Ils sont ordonnés, et peuvent être optionnels ou obligatoires. Par exemple, ajoutez
 un argument optionnel ``last_name`` à la commande et faites en sorte que l'argument
 ``name`` soit obligatoire::
